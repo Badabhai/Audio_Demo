@@ -38,11 +38,10 @@ void app_console_handle_msg(T_IO_MSG console_msg)
 
         if (id == AUDIO_ID)
         {
-					APP_PRINT_INFO0("AUDIO_ID---------------");
+
         }
         else if (id == NOTIFICATION_ID)
         {
-						APP_PRINT_INFO0("NOTIFICATION_ID---------------");
             switch (action)
             {
             case AUDIO_DEMO_ACTION_RING_TONE_PLAY:
@@ -59,7 +58,6 @@ void app_console_handle_msg(T_IO_MSG console_msg)
         }
         else if (id == APT_ID)
         {
-						APP_PRINT_INFO0("APT_ID---------------");
             switch (action)
             {
             case AUDIO_DEMO_ACTION_APT_PLAY:
@@ -76,7 +74,6 @@ void app_console_handle_msg(T_IO_MSG console_msg)
         }
         else if (id == LLAPT_ID)
         {
-						APP_PRINT_INFO0("LLAPT_ID---------------");
             switch (action)
             {
             case AUDIO_DEMO_ACTION_LLAPT_PLAY:
@@ -93,7 +90,6 @@ void app_console_handle_msg(T_IO_MSG console_msg)
         }
         else if (id == LINE_IN_ID)
         {
-						APP_PRINT_INFO0("LINE_IN_ID---------------");
             switch (action)
             {
             case AUDIO_DEMO_ACTION_LINE_IN_START:
@@ -110,7 +106,6 @@ void app_console_handle_msg(T_IO_MSG console_msg)
         }
         else if (id == ANC_ID)
         {
-						APP_PRINT_INFO0("ANC_ID---------------");
             switch (action)
             {
             case AUDIO_DEMO_ACTION_ANC_ENABLE:
@@ -127,12 +122,10 @@ void app_console_handle_msg(T_IO_MSG console_msg)
         }
         else if (id == VAD_ID)
         {
-						APP_PRINT_INFO0("VAD------------------");
             switch (action)
             {
             case AUDIO_DEMO_ACTION_VAD_ENABLE:
                 {
-									APP_PRINT_INFO0("AUDIO_DEMO_ACTION_VAD_ENABLE----");
                     uint8_t  vad_type;
                     uint8_t  bit_width;
                     uint16_t frame_length;
@@ -141,12 +134,11 @@ void app_console_handle_msg(T_IO_MSG console_msg)
                     LE_STREAM_TO_UINT8(bit_width, p);
                     LE_STREAM_TO_UINT16(frame_length, p);
 
-                    app_audio_vad_enable(0x01, 16, 160);
+                    app_audio_vad_enable(vad_type, bit_width, frame_length);
                 }
                 break;
 
             case AUDIO_DEMO_ACTION_VAD_DISABLE:
-								APP_PRINT_INFO0("AUDIO_DEMO_ACTION_VAD_DISABLE----");
                 app_audio_vad_disable();
                 break;
 
@@ -156,7 +148,6 @@ void app_console_handle_msg(T_IO_MSG console_msg)
         }
         else if (id == KWS_ID)
         {
-						APP_PRINT_INFO0("IO_MSG_TYPE_CONSOLE---------------");
             switch (action)
             {
             case AUDIO_DEMO_ACTION_KWS_ENABLE:
@@ -172,8 +163,7 @@ void app_console_handle_msg(T_IO_MSG console_msg)
             }
         }
         else if (id == PIPE_ID)
-        {	
-						APP_PRINT_INFO0("IO_MSG_TYPE_CONSOLE---------------");
+        {
             switch (action)
             {
             case AUDIO_DEMO_ACTION_PIPE_CREATE:
@@ -205,8 +195,7 @@ void app_console_handle_msg(T_IO_MSG console_msg)
             }
         }
         else if (id == TRACK_ID)
-        {	
-						APP_PRINT_INFO0("IO_MSG_TYPE_CONSOLE---------------");
+        {
             switch (action)
             {
             case AUDIO_DEMO_ACTION_TRACK_CREATE:

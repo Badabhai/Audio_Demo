@@ -25,7 +25,6 @@ bool app_audio_vad_enable(uint8_t  vad_type,
 
         if (vad_type == VAD_TYPE_SW)
         {
-					APP_PRINT_INFO0("VAD_TYPE_SW-----------");
             format_info.type = AUDIO_FORMAT_TYPE_SBC;
             format_info.frame_num = 1;
             format_info.attr.sbc.sample_rate = 16000;

@@ -1,629 +1,0 @@
-Dependencies for Project 'rtl87x3d_audio_demo', Target 'audio_demo_cs_16M_bank0': (DO NOT MODIFY !)
-CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (..\..\..\..\inc\rtl87x3d\platform\rom_uuid.h)(0x671F52AA)()
-F (..\config.h)(0x671F52A8)()
-F (..\..\..\..\bin\rtl87x3d\gap_utils.lib)(0x681B4000)()
-F (..\..\..\..\bin\rtl87x3d\ROM.lib)(0x681B4000)()
-F (..\..\..\..\bin\rtl87x3d\hal_utils.lib)(0x681B40EC)()
-F (..\..\..\..\bin\rtl87x3d\framework\audio.lib)(0x681B4106)()
-F (..\..\..\..\bin\rtl87x3d\framework\console.lib)(0x681B40FC)()
-F (..\..\..\..\bin\rtl87x3d\framework\sysm.lib)(0x681B40F8)()
-F (..\..\..\..\bin\rtl87x3d\framework\remote.lib)(0x681B40FE)()
-F (..\..\..\..\bin\rtl87x3d\framework\btm.lib)(0x681B4102)()
-F (..\..\..\..\src\mcu\rtl87x3\arm\startup_rtl87x3d.s)(0x681B4008)(--cpu Cortex-M4.fp.sp --li -g --16 --apcs=interwork -I ..\..\..\..\inc\platform -I ..\..\ble_broadcaster -I .\ -I ..\inc\rtl87x3d -I ..\inc\rtl87x3d --cpreproc-IDevice\ARM\ARMCM4\Include--pd "__UVISION_VERSION SETA 536"--list .\listings\startup_rtl87x3d.lst --xref -o .\objects\startup_rtl87x3d.o --depend .\objects\startup_rtl87x3d.d)
-F (..\..\..\..\src\mcu\rtl87x3\system_rtl87x3.c)(0x681B4008)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\system_rtl87x3.o --omf_browse .\objects\system_rtl87x3.crf --depend .\objects\system_rtl87x3.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (D:\Softwares\Keil\ARM\ARMCC\include\locale.h)(0x602546A0)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdlib.h)(0x6025469C)
-I (..\..\..\..\inc\rtl87x3d\platform\rtl876x.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\compiler_abstraction.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\irqn_def.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cm4.h)(0x681B3D42)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmInstr.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmFunc.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmSimd.h)(0x671F52AA)
-I (..\..\..\..\inc\hal\io\io_utils.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\pin_def.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\indirect_access.h)(0x671F52AA)
-I (..\..\..\..\inc\platform\section.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\rom_uuid.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\trace.h)(0x681B4006)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (..\..\audio_demo\version.h)(0x681B4F38)
-I (..\..\..\..\inc\rtl87x3d\platform\patch_header_check.h)(0x671F52AA)
-I (..\inc\rtl87x3d\mem_config.h)(0x671F52A8)
-I (..\..\..\..\inc\os\os_mem.h)(0x681B3D42)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stddef.h)(0x602546A6)
-I (..\..\..\..\inc\rtl87x3d\platform\platform_utils.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\crc16btx.h)(0x681B4006)
-I (..\..\..\..\inc\hal\platform\platform_ext.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\vector_table.h)(0x681B4006)
-I (..\..\..\..\inc\hal\platform\system_status_api.h)(0x681B4006)
-I (..\..\..\..\bin\rtl87x3d\upperstack_stamp\upperstack_compile_stamp.h)(0x671F52A4)
-I (..\..\..\..\inc\hal\platform\storage.h)(0x681B3D42)
-I (..\..\..\..\bin\rtl87x3d\flash_map_config\flash_map.h)(0x681B4000)
-I (..\..\..\..\inc\hal\platform\ftl.h)(0x6800C296)
-I (..\..\..\..\inc\rtl87x3d\platform\errno.h)(0x681B3D42)
-I (D:\Softwares\Keil\ARM\ARMCC\include\errno.h)(0x6025469E)
-I (..\..\..\..\inc\hal\platform\fmc_api.h)(0x6800C296)
-I (..\..\..\..\inc\rtl87x3d\hal\hal_def.h)(0x6800C296)
-I (..\..\..\..\inc\rtl87x3d\platform\dma_channel.h)(0x681B4006)
-F (..\..\..\..\src\sample\audio_demo\app_dlps.c)(0x697CA25E)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\app_dlps.o --omf_browse .\objects\app_dlps.crf --depend .\objects\app_dlps.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (..\..\audio_demo\board.h)(0x681B3D3C)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (D:\Softwares\Keil\ARM\ARMCC\include\string.h)(0x602546A6)
-I (..\..\..\..\inc\rtl87x3d\platform\trace.h)(0x681B4006)
-I (..\..\..\..\inc\hal\platform\pm.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\errno.h)(0x681B3D42)
-I (D:\Softwares\Keil\ARM\ARMCC\include\errno.h)(0x6025469E)
-I (..\..\..\..\inc\hal\io\io_dlps.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\rtl876x.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\compiler_abstraction.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\irqn_def.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cm4.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmInstr.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmFunc.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmSimd.h)(0x671F52AA)
-I (..\..\..\..\inc\hal\io\io_utils.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\pin_def.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\indirect_access.h)(0x671F52AA)
-I (..\..\..\..\inc\platform\section.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_uart.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_bitfields.h)(0x671F52AA)
-F (..\..\..\..\src\mcu\module\console\transport\console_uart.c)(0x697CA489)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\console_uart.o --omf_browse .\objects\console_uart.crf --depend .\objects\console_uart.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (D:\Softwares\Keil\ARM\ARMCC\include\string.h)(0x602546A6)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdlib.h)(0x6025469C)
-I (..\..\..\..\inc\rtl87x3d\platform\trace.h)(0x681B4006)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (..\..\..\..\inc\os\os_msg.h)(0x681B4006)
-I (..\..\..\..\inc\os\os_sync.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_uart.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\rtl876x.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\compiler_abstraction.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\irqn_def.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cm4.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmInstr.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmFunc.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmSimd.h)(0x671F52AA)
-I (..\..\..\..\inc\hal\io\io_utils.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\pin_def.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\indirect_access.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_bitfields.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_gdma.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_nvic.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_rcc.h)(0x681B4006)
-I (..\..\..\..\src\sample\audio_demo\app_dlps.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_pinmux.h)(0x681B4006)
-I (..\..\..\..\inc\app\app_msg.h)(0x681B3D42)
-I (..\..\..\..\inc\framework\console\console.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\vector_table.h)(0x681B4006)
-I (..\..\..\..\inc\platform\section.h)(0x671F52AA)
-I (..\..\..\..\inc\hal\platform\pm.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\errno.h)(0x681B3D42)
-I (D:\Softwares\Keil\ARM\ARMCC\include\errno.h)(0x6025469E)
-I (..\..\..\..\inc\rtl87x3d\platform\dma_channel.h)(0x681B4006)
-I (..\..\..\..\src\mcu\module\console\transport\console_uart.h)(0x671F52AA)
-F (..\..\..\..\src\sample\audio_demo\app_audio_console_msg.c)(0x697DE7ED)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\app_audio_console_msg.o --omf_browse .\objects\app_audio_console_msg.crf --depend .\objects\app_audio_console_msg.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (..\..\..\..\inc\rtl87x3d\platform\trace.h)(0x681B4006)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (..\..\..\..\inc\bluetooth\gap\bt_types.h)(0x681B4006)
-I (..\..\..\..\inc\os\os_mem.h)(0x681B3D42)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stddef.h)(0x602546A6)
-I (..\..\..\..\inc\app\app_msg.h)(0x681B3D42)
-I (..\..\..\..\src\sample\audio_demo\app_console_msg.h)(0x671F52AA)
-I (..\..\..\..\src\sample\audio_demo\app_audio_demo_console.h)(0x671F52AA)
-I (..\..\..\..\src\sample\audio_demo\app_audio_demo_policy.h)(0x671F52AA)
-I (..\..\..\..\src\sample\audio_demo\app_audio_demo_passthrough.h)(0x671F52AA)
-I (..\..\..\..\src\sample\audio_demo\app_audio_demo_line_in.h)(0x671F52AA)
-I (..\..\..\..\src\sample\audio_demo\app_audio_demo_anc.h)(0x671F52AA)
-I (..\..\..\..\src\sample\audio_demo\app_audio_demo_vad.h)(0x673EC002)
-I (..\..\..\..\src\sample\audio_demo\app_audio_demo_pipe.h)(0x671F52AA)
-I (..\..\..\..\src\sample\audio_demo\app_audio_demo_track.h)(0x671F52AA)
-I (..\..\..\..\src\sample\audio_demo\app_audio_demo_kws.h)(0x671F52AA)
-F (..\..\..\..\src\sample\audio_demo\app_audio_demo_console.c)(0x697CAD3A)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\app_audio_demo_console.o --omf_browse .\objects\app_audio_demo_console.crf --depend .\objects\app_audio_demo_console.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdio.h)(0x6025469C)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (D:\Softwares\Keil\ARM\ARMCC\include\string.h)(0x602546A6)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdlib.h)(0x6025469C)
-I (..\..\..\..\inc\rtl87x3d\platform\trace.h)(0x681B4006)
-I (..\..\..\..\inc\os\os_mem.h)(0x681B3D42)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stddef.h)(0x602546A6)
-I (..\..\..\..\inc\framework\console\cli.h)(0x681B3D42)
-I (..\..\..\..\inc\bluetooth\gap\bt_types.h)(0x681B4006)
-I (..\..\..\..\src\sample\audio_demo\app_audio_io_msg.h)(0x671F52AA)
-I (..\..\..\..\inc\app\app_msg.h)(0x681B3D42)
-I (..\..\..\..\src\sample\audio_demo\app_audio_demo_console.h)(0x671F52AA)
-F (..\..\..\..\src\sample\audio_demo\app_audio_demo_main.c)(0x697DAC5B)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\app_audio_demo_main.o --omf_browse .\objects\app_audio_demo_main.crf --depend .\objects\app_audio_demo_main.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_pinmux.h)(0x681B4006)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (..\..\..\..\inc\rtl87x3d\platform\rtl876x.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\compiler_abstraction.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\irqn_def.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cm4.h)(0x681B3D42)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmInstr.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmFunc.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmSimd.h)(0x671F52AA)
-I (..\..\..\..\inc\hal\io\io_utils.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\pin_def.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\indirect_access.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_bitfields.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\trace.h)(0x681B4006)
-I (..\..\..\..\inc\os\os_task.h)(0x681B4006)
-I (..\..\..\..\inc\os\os_mem.h)(0x681B3D42)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stddef.h)(0x602546A6)
-I (..\..\..\..\inc\os\os_sched.h)(0x681B4006)
-I (..\..\..\..\inc\os\os_msg.h)(0x681B4006)
-I (..\..\..\..\inc\bluetooth\gap\gap.h)(0x6800C296)
-I (..\..\..\..\inc\bluetooth\gap\bt_types.h)(0x681B4006)
-I (..\..\..\..\inc\bluetooth\gap\gap_chann.h)(0x6800C296)
-I (..\..\..\..\inc\bluetooth\gap\gap_br.h)(0x681B4006)
-I (..\..\..\..\inc\framework\bt\btm.h)(0x681B4006)
-I (..\..\..\..\inc\framework\bt\bt_pbap.h)(0x6800C296)
-I (..\..\..\..\inc\framework\bt\bt_avrcp.h)(0x6800C296)
-I (..\..\..\..\inc\framework\bt\bt_iap.h)(0x6800C296)
-I (..\..\..\..\inc\framework\sysm\sysm.h)(0x671F52AA)
-I (..\..\..\..\inc\framework\remote\remote.h)(0x681B3D42)
-I (..\..\..\..\inc\framework\audio\audio.h)(0x681B4006)
-I (..\..\..\..\inc\framework\audio\audio_track.h)(0x681B4006)
-I (..\..\..\..\inc\framework\audio\audio_type.h)(0x681B4006)
-I (..\..\..\..\inc\framework\audio\audio_route.h)(0x681B4006)
-I (..\..\..\..\inc\framework\audio\audio_line.h)(0x6800C296)
-I (..\..\..\..\inc\framework\audio\audio_passthrough.h)(0x6800C296)
-I (..\..\..\..\inc\framework\audio\tts.h)(0x6800C296)
-I (..\..\..\..\inc\framework\audio\audio_probe.h)(0x681B3D42)
-I (..\..\..\..\inc\hal\platform\app_timer.h)(0x673EC000)
-I (..\..\..\..\inc\rtl87x3d\platform\errno.h)(0x681B3D42)
-I (D:\Softwares\Keil\ARM\ARMCC\include\errno.h)(0x6025469E)
-I (..\..\..\..\inc\app\app_msg.h)(0x681B3D42)
-I (..\..\..\..\src\sample\audio_demo\app_audio_io_msg.h)(0x671F52AA)
-I (..\..\..\..\src\mcu\module\console\transport\console_uart.h)(0x671F52AA)
-I (..\..\..\..\inc\framework\console\console.h)(0x671F52AA)
-I (..\..\..\..\inc\hal\platform\pm.h)(0x681B3D42)
-I (..\..\..\..\src\sample\audio_demo\app_audio_demo_console.h)(0x671F52AA)
-I (..\..\..\..\src\sample\audio_demo\app_audio_demo_policy.h)(0x671F52AA)
-I (..\..\..\..\src\sample\audio_demo\app_audio_demo_passthrough.h)(0x671F52AA)
-I (..\..\..\..\src\sample\audio_demo\app_audio_demo_line_in.h)(0x671F52AA)
-I (..\..\..\..\src\mcu\module\buck\app_buck_tps62860.h)(0x671F52AA)
-I (..\..\..\..\src\mcu\module\buck\app_buck_apw7564.h)(0x671F52AA)
-F (..\..\..\..\src\sample\audio_demo\app_audio_io_msg.c)(0x697DAC5A)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\app_audio_io_msg.o --omf_browse .\objects\app_audio_io_msg.crf --depend .\objects\app_audio_io_msg.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (..\..\..\..\inc\os\os_sync.h)(0x681B4006)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (..\..\..\..\inc\os\os_msg.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\trace.h)(0x681B4006)
-I (..\..\..\..\src\sample\audio_demo\app_audio_io_msg.h)(0x671F52AA)
-I (..\..\..\..\inc\app\app_msg.h)(0x681B3D42)
-I (..\..\..\..\src\sample\audio_demo\app_console_msg.h)(0x671F52AA)
-F (..\..\..\..\src\sample\audio_demo\app_audio_demo_policy.c)(0x6800C298)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\app_audio_demo_policy.o --omf_browse .\objects\app_audio_demo_policy.crf --depend .\objects\app_audio_demo_policy.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdio.h)(0x6025469C)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdlib.h)(0x6025469C)
-I (D:\Softwares\Keil\ARM\ARMCC\include\string.h)(0x602546A6)
-I (..\..\..\..\inc\os\os_sched.h)(0x681B4006)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (..\..\..\..\inc\rtl87x3d\platform\trace.h)(0x681B4006)
-I (..\..\..\..\inc\framework\audio\audio.h)(0x681B4006)
-I (..\..\..\..\inc\framework\audio\audio_track.h)(0x681B4006)
-I (..\..\..\..\inc\framework\audio\audio_type.h)(0x681B4006)
-I (..\..\..\..\inc\framework\audio\audio_route.h)(0x681B4006)
-I (..\..\..\..\inc\framework\audio\audio_line.h)(0x6800C296)
-I (..\..\..\..\inc\framework\audio\audio_passthrough.h)(0x6800C296)
-I (..\..\..\..\inc\framework\audio\tts.h)(0x6800C296)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stddef.h)(0x602546A6)
-I (..\..\..\..\inc\framework\console\console.h)(0x671F52AA)
-I (..\..\..\..\inc\framework\audio\ringtone.h)(0x6800C296)
-I (..\..\..\..\inc\framework\audio\voice_prompt.h)(0x6800C296)
-I (..\..\..\..\inc\hal\platform\app_timer.h)(0x673EC000)
-I (..\..\..\..\inc\rtl87x3d\platform\errno.h)(0x681B3D42)
-I (D:\Softwares\Keil\ARM\ARMCC\include\errno.h)(0x6025469E)
-I (..\..\..\..\src\sample\audio_demo\app_audio_demo_track.h)(0x671F52AA)
-I (..\..\..\..\src\sample\audio_demo\app_audio_demo_policy.h)(0x671F52AA)
-F (..\..\..\..\src\sample\audio_demo\app_audio_demo_passthrough.c)(0x6800C298)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\app_audio_demo_passthrough.o --omf_browse .\objects\app_audio_demo_passthrough.crf --depend .\objects\app_audio_demo_passthrough.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (..\..\..\..\inc\rtl87x3d\platform\trace.h)(0x681B4006)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (..\..\..\..\inc\framework\audio\audio.h)(0x681B4006)
-I (..\..\..\..\inc\framework\audio\audio_track.h)(0x681B4006)
-I (..\..\..\..\inc\framework\audio\audio_type.h)(0x681B4006)
-I (..\..\..\..\inc\framework\audio\audio_route.h)(0x681B4006)
-I (..\..\..\..\inc\framework\audio\audio_line.h)(0x6800C296)
-I (..\..\..\..\inc\framework\audio\audio_passthrough.h)(0x6800C296)
-I (..\..\..\..\inc\framework\audio\tts.h)(0x6800C296)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stddef.h)(0x602546A6)
-I (..\..\..\..\src\sample\audio_demo\app_audio_demo_passthrough.h)(0x671F52AA)
-F (..\..\..\..\src\sample\audio_demo\app_audio_demo_line_in.c)(0x673EC002)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\app_audio_demo_line_in.o --omf_browse .\objects\app_audio_demo_line_in.crf --depend .\objects\app_audio_demo_line_in.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (..\..\..\..\inc\rtl87x3d\platform\trace.h)(0x681B4006)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (..\..\..\..\inc\framework\audio\audio.h)(0x681B4006)
-I (..\..\..\..\inc\framework\audio\audio_track.h)(0x681B4006)
-I (..\..\..\..\inc\framework\audio\audio_type.h)(0x681B4006)
-I (..\..\..\..\inc\framework\audio\audio_route.h)(0x681B4006)
-I (..\..\..\..\inc\framework\audio\audio_line.h)(0x6800C296)
-I (..\..\..\..\inc\framework\audio\audio_passthrough.h)(0x6800C296)
-I (..\..\..\..\inc\framework\audio\tts.h)(0x6800C296)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stddef.h)(0x602546A6)
-I (..\..\..\..\src\sample\audio_demo\app_audio_demo_line_in.h)(0x671F52AA)
-F (..\..\..\..\src\sample\audio_demo\app_audio_demo_anc.c)(0x671F52AA)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\app_audio_demo_anc.o --omf_browse .\objects\app_audio_demo_anc.crf --depend .\objects\app_audio_demo_anc.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (..\..\..\..\inc\rtl87x3d\platform\trace.h)(0x681B4006)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (..\..\..\..\inc\framework\audio\anc.h)(0x6800C296)
-I (..\..\..\..\inc\framework\audio\audio_type.h)(0x681B4006)
-I (..\..\..\..\inc\framework\audio\audio_route.h)(0x681B4006)
-I (..\..\..\..\src\sample\audio_demo\app_audio_demo_anc.h)(0x671F52AA)
-F (..\..\..\..\src\sample\audio_demo\app_audio_demo_pipe.c)(0x6800C298)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\app_audio_demo_pipe.o --omf_browse .\objects\app_audio_demo_pipe.crf --depend .\objects\app_audio_demo_pipe.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdlib.h)(0x6025469C)
-I (D:\Softwares\Keil\ARM\ARMCC\include\string.h)(0x602546A6)
-I (..\..\..\..\inc\rtl87x3d\platform\trace.h)(0x681B4006)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (..\..\..\..\inc\framework\console\console.h)(0x671F52AA)
-I (..\..\..\..\inc\framework\audio\audio_type.h)(0x681B4006)
-I (..\..\..\..\inc\framework\audio\audio_pipe.h)(0x681B4006)
-I (..\..\..\..\src\sample\audio_demo\app_audio_demo_pipe.h)(0x671F52AA)
-I (..\..\..\..\src\sample\audio_demo\app_audio_data.h)(0x671F52AA)
-F (..\..\..\..\src\sample\audio_demo\app_audio_data.c)(0x671F52AA)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\app_audio_data.o --omf_browse .\objects\app_audio_data.crf --depend .\objects\app_audio_data.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (..\..\..\..\src\sample\audio_demo\app_audio_data.h)(0x671F52AA)
-F (..\..\..\..\src\sample\audio_demo\app_audio_demo_track.c)(0x6800C298)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\app_audio_demo_track.o --omf_browse .\objects\app_audio_demo_track.crf --depend .\objects\app_audio_demo_track.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (D:\Softwares\Keil\ARM\ARMCC\include\string.h)(0x602546A6)
-I (..\..\..\..\inc\rtl87x3d\platform\trace.h)(0x681B4006)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (..\..\..\..\inc\os\os_mem.h)(0x681B3D42)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stddef.h)(0x602546A6)
-I (..\..\..\..\inc\framework\console\console.h)(0x671F52AA)
-I (..\..\..\..\inc\framework\audio\audio_type.h)(0x681B4006)
-I (..\..\..\..\inc\framework\audio\audio_track.h)(0x681B4006)
-I (..\..\..\..\inc\framework\audio\audio_route.h)(0x681B4006)
-I (..\..\..\..\inc\framework\audio\kws.h)(0x6800C296)
-I (..\..\..\..\src\sample\audio_demo\app_audio_data.h)(0x671F52AA)
-I (..\..\..\..\src\sample\audio_demo\app_audio_demo_track.h)(0x671F52AA)
-F (..\..\..\..\src\mcu\module\buck\app_buck_tps62860.c)(0x681B3D42)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\app_buck_tps62860.o --omf_browse .\objects\app_buck_tps62860.crf --depend .\objects\app_buck_tps62860.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (..\..\..\..\src\mcu\module\buck\app_buck_tps62860.h)(0x671F52AA)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (..\..\..\..\inc\hal\io\hal_i2c.h)(0x6800C296)
-I (..\..\..\..\inc\rtl87x3d\hal\hal_def.h)(0x6800C296)
-I (..\..\..\..\inc\rtl87x3d\platform\platform_utils.h)(0x671F52AA)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdlib.h)(0x6025469C)
-I (..\..\..\..\inc\hal\io\hal_gpio.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\pin_def.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\trace.h)(0x681B4006)
-I (..\..\..\..\inc\hal\power\ext_buck.h)(0x6800C296)
-F (..\..\..\..\src\mcu\module\buck\app_buck_apw7564.c)(0x671F52AA)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\app_buck_apw7564.o --omf_browse .\objects\app_buck_apw7564.crf --depend .\objects\app_buck_apw7564.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (..\..\..\..\src\mcu\module\buck\app_buck_apw7564.h)(0x671F52AA)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (..\..\..\..\inc\hal\io\hal_i2c.h)(0x6800C296)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (..\..\..\..\inc\rtl87x3d\hal\hal_def.h)(0x6800C296)
-I (..\..\..\..\inc\hal\power\ext_buck.h)(0x6800C296)
-F (..\..\..\..\src\sample\audio_demo\app_audio_demo_vad.c)(0x697DB01A)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\app_audio_demo_vad.o --omf_browse .\objects\app_audio_demo_vad.crf --depend .\objects\app_audio_demo_vad.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (..\..\..\..\inc\rtl87x3d\platform\trace.h)(0x681B4006)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (..\..\..\..\inc\framework\audio\audio_type.h)(0x681B4006)
-I (..\..\..\..\inc\framework\audio\vad.h)(0x6800C296)
-I (..\..\..\..\inc\framework\audio\kws.h)(0x6800C296)
-I (..\..\..\..\src\sample\audio_demo\app_audio_demo_vad.h)(0x673EC002)
-F (..\..\..\..\src\sample\audio_demo\app_audio_demo_kws.c)(0x697DD512)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\app_audio_demo_kws.o --omf_browse .\objects\app_audio_demo_kws.crf --depend .\objects\app_audio_demo_kws.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (D:\Softwares\Keil\ARM\ARMCC\include\string.h)(0x602546A6)
-I (..\..\..\..\inc\rtl87x3d\platform\trace.h)(0x681B4006)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (..\..\..\..\inc\framework\audio\audio_type.h)(0x681B4006)
-I (..\..\..\..\inc\framework\audio\kws.h)(0x6800C296)
-I (..\..\..\..\inc\framework\console\console.h)(0x671F52AA)
-I (..\..\..\..\src\sample\audio_demo\app_audio_demo_kws.h)(0x671F52AA)
-F (..\..\..\..\src\mcu\io\rtl87x3d\rtl876x_gdma.c)(0x671F52AA)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\rtl876x_gdma.o --omf_browse .\objects\rtl876x_gdma.crf --depend .\objects\rtl876x_gdma.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_gdma.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\rtl876x.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\compiler_abstraction.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\irqn_def.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cm4.h)(0x681B3D42)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmInstr.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmFunc.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmSimd.h)(0x671F52AA)
-I (..\..\..\..\inc\hal\io\io_utils.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\pin_def.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\indirect_access.h)(0x671F52AA)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_rcc.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_bitfields.h)(0x671F52AA)
-I (..\..\..\..\inc\platform\section.h)(0x671F52AA)
-F (..\..\..\..\src\mcu\io\rtl87x3d\rtl876x_uart.c)(0x681B3D42)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\rtl876x_uart.o --omf_browse .\objects\rtl876x_uart.crf --depend .\objects\rtl876x_uart.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (D:\Softwares\Keil\ARM\ARMCC\include\string.h)(0x602546A6)
-I (..\..\..\..\inc\rtl87x3d\platform\rtl876x.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\compiler_abstraction.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\irqn_def.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cm4.h)(0x681B3D42)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmInstr.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmFunc.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmSimd.h)(0x671F52AA)
-I (..\..\..\..\inc\hal\io\io_utils.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\pin_def.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\indirect_access.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_bitfields.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_rcc.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_uart.h)(0x681B4006)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (..\..\..\..\inc\platform\section.h)(0x671F52AA)
-F (..\..\..\..\src\mcu\io\rtl87x3d\rtl876x_rcc.c)(0x681B3D42)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\rtl876x_rcc.o --omf_browse .\objects\rtl876x_rcc.crf --depend .\objects\rtl876x_rcc.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (..\..\..\..\inc\rtl87x3d\platform\rtl876x.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\compiler_abstraction.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\irqn_def.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cm4.h)(0x681B3D42)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmInstr.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmFunc.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmSimd.h)(0x671F52AA)
-I (..\..\..\..\inc\hal\io\io_utils.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\pin_def.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\indirect_access.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_bitfields.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_rcc.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_tim.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\platform_utils.h)(0x671F52AA)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdlib.h)(0x6025469C)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (..\..\..\..\inc\rtl87x3d\io\rtl8763_syson_reg.h)(0x671F52AA)
-F (..\..\..\..\src\mcu\io\rtl87x3d\rtl876x_pinmux.c)(0x681B3D42)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\rtl876x_pinmux.o --omf_browse .\objects\rtl876x_pinmux.crf --depend .\objects\rtl876x_pinmux.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (D:\Softwares\Keil\ARM\ARMCC\include\string.h)(0x602546A6)
-I (..\..\..\..\inc\rtl87x3d\io\rtl8763_syson_reg.h)(0x671F52AA)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (..\..\..\..\inc\rtl87x3d\platform\rtl876x.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\compiler_abstraction.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\irqn_def.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cm4.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmInstr.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmFunc.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmSimd.h)(0x671F52AA)
-I (..\..\..\..\inc\hal\io\io_utils.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\pin_def.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\indirect_access.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_pinmux.h)(0x681B4006)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_bitfields.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_rcc.h)(0x681B4006)
-I (..\..\..\..\inc\platform\section.h)(0x671F52AA)
-F (..\..\..\..\src\mcu\io\rtl87x3d\rtl876x_tim.c)(0x671F52AA)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\rtl876x_tim.o --omf_browse .\objects\rtl876x_tim.crf --depend .\objects\rtl876x_tim.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_tim.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\rtl876x.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\compiler_abstraction.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\irqn_def.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cm4.h)(0x681B3D42)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmInstr.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmFunc.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmSimd.h)(0x671F52AA)
-I (..\..\..\..\inc\hal\io\io_utils.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\pin_def.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\indirect_access.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_bitfields.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_rcc.h)(0x681B4006)
-I (..\..\..\..\inc\platform\section.h)(0x671F52AA)
-F (..\..\..\..\src\mcu\io\rtl87x3d\rtl876x_i2c.c)(0x681B4008)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\rtl876x_i2c.o --omf_browse .\objects\rtl876x_i2c.crf --depend .\objects\rtl876x_i2c.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (D:\Softwares\Keil\ARM\ARMCC\include\string.h)(0x602546A6)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_i2c.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\rtl876x.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\compiler_abstraction.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\irqn_def.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cm4.h)(0x681B3D42)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmInstr.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmFunc.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmSimd.h)(0x671F52AA)
-I (..\..\..\..\inc\hal\io\io_utils.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\pin_def.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\indirect_access.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_bitfields.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_rcc.h)(0x681B4006)
-F (..\..\..\..\src\mcu\io\rtl87x3d\rtl876x_gpio.c)(0x681B3D42)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\rtl876x_gpio.o --omf_browse .\objects\rtl876x_gpio.crf --depend .\objects\rtl876x_gpio.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (D:\Softwares\Keil\ARM\ARMCC\include\string.h)(0x602546A6)
-I (..\..\..\..\inc\rtl87x3d\platform\rtl876x.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\compiler_abstraction.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\irqn_def.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cm4.h)(0x681B3D42)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmInstr.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmFunc.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmSimd.h)(0x671F52AA)
-I (..\..\..\..\inc\hal\io\io_utils.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\pin_def.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\indirect_access.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_gpio.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_bitfields.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_rcc.h)(0x681B4006)
-I (..\..\..\..\inc\platform\section.h)(0x671F52AA)
-F (..\..\..\..\src\mcu\io_hal\common\hw_tim.c)(0x681B3D42)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\hw_tim.o --omf_browse .\objects\hw_tim.crf --depend .\objects\hw_tim.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdio.h)(0x6025469C)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_tim.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\rtl876x.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\compiler_abstraction.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\irqn_def.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cm4.h)(0x681B3D42)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmInstr.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmFunc.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmSimd.h)(0x671F52AA)
-I (..\..\..\..\inc\hal\io\io_utils.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\pin_def.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\indirect_access.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_bitfields.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_nvic.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_gdma.h)(0x681B4006)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (..\..\..\..\inc\hal\io\hw_tim.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\hal\hal_def.h)(0x6800C296)
-I (..\..\..\..\inc\os\os_sync.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\trace.h)(0x681B4006)
-I (..\..\..\..\inc\platform\section.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\fmc_platform.h)(0x671F52AA)
-I (..\..\..\..\inc\hal\platform\pm.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\errno.h)(0x681B3D42)
-I (D:\Softwares\Keil\ARM\ARMCC\include\errno.h)(0x6025469E)
-I (..\..\..\..\inc\rtl87x3d\platform\vector_table.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\platform_utils.h)(0x671F52AA)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdlib.h)(0x6025469C)
-F (..\..\..\..\src\mcu\io_hal\common\hal_i2c.c)(0x681B4008)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\hal_i2c.o --omf_browse .\objects\hal_i2c.crf --depend .\objects\hal_i2c.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (D:\Softwares\Keil\ARM\ARMCC\include\string.h)(0x602546A6)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdlib.h)(0x6025469C)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_i2c.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\rtl876x.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\compiler_abstraction.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\irqn_def.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cm4.h)(0x681B3D42)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmInstr.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmFunc.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmSimd.h)(0x671F52AA)
-I (..\..\..\..\inc\hal\io\io_utils.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\pin_def.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\indirect_access.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_bitfields.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_pinmux.h)(0x681B4006)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_rcc.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_nvic.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_gdma.h)(0x681B4006)
-I (..\..\..\..\inc\hal\io\io_dlps.h)(0x681B3D42)
-I (..\..\..\..\inc\os\os_sync.h)(0x681B4006)
-I (..\..\..\..\inc\os\os_mem.h)(0x681B3D42)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stddef.h)(0x602546A6)
-I (..\..\..\..\inc\hal\io\hal_i2c.h)(0x6800C296)
-I (..\..\..\..\inc\rtl87x3d\hal\hal_def.h)(0x6800C296)
-I (..\..\..\..\inc\hal\io\hal_dma_internal.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\trace.h)(0x681B4006)
-I (..\..\..\..\inc\hal\io\hal_gpio.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\platform_utils.h)(0x671F52AA)
-F (..\..\..\..\src\mcu\io_hal\common\hal_gpio.c)(0x681B4008)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\hal_gpio.o --omf_browse .\objects\hal_gpio.crf --depend .\objects\hal_gpio.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (D:\Softwares\Keil\ARM\ARMCC\include\string.h)(0x602546A6)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdlib.h)(0x6025469C)
-I (..\..\..\..\inc\os\os_mem.h)(0x681B3D42)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stddef.h)(0x602546A6)
-I (..\..\..\..\inc\rtl87x3d\platform\trace.h)(0x681B4006)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (..\..\..\..\inc\platform\section.h)(0x671F52AA)
-I (..\..\..\..\inc\hal\platform\pm.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\errno.h)(0x681B3D42)
-I (D:\Softwares\Keil\ARM\ARMCC\include\errno.h)(0x6025469E)
-I (..\..\..\..\inc\rtl87x3d\platform\rtl876x.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\compiler_abstraction.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\irqn_def.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cm4.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmInstr.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmFunc.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmSimd.h)(0x671F52AA)
-I (..\..\..\..\inc\hal\io\io_utils.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\pin_def.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\indirect_access.h)(0x671F52AA)
-I (..\..\..\..\inc\hal\io\io_dlps.h)(0x681B3D42)
-I (..\..\..\..\inc\hal\io\hal_gpio.h)(0x681B4006)
-I (..\..\..\..\inc\hal\io\hal_gpio_int.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_pinmux.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_bitfields.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_rcc.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_gpio.h)(0x681B4006)
-F (..\..\..\..\src\mcu\io_hal\common\hal_dma_internal.c)(0x681B4008)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\hal_dma_internal.o --omf_browse .\objects\hal_dma_internal.crf --depend .\objects\hal_dma_internal.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_gdma.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\rtl876x.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\compiler_abstraction.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\irqn_def.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cm4.h)(0x681B3D42)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmInstr.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmFunc.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmSimd.h)(0x671F52AA)
-I (..\..\..\..\inc\hal\io\io_utils.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\pin_def.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\indirect_access.h)(0x671F52AA)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (..\..\..\..\inc\rtl87x3d\platform\vector_table.h)(0x681B4006)
-I (..\..\..\..\inc\hal\io\hal_dma_internal.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\hal\hal_def.h)(0x6800C296)
-F (..\..\..\..\src\mcu\io_hal\rtl87x3d\hal_gpio_int.c)(0x681B3D42)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\hal_gpio_int.o --omf_browse .\objects\hal_gpio_int.crf --depend .\objects\hal_gpio_int.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (..\..\..\..\inc\rtl87x3d\platform\rtl876x.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\compiler_abstraction.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\irqn_def.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cm4.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmInstr.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmFunc.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmSimd.h)(0x671F52AA)
-I (..\..\..\..\inc\hal\io\io_utils.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\pin_def.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\indirect_access.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_gpio.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_bitfields.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_nvic.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\trace.h)(0x681B4006)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (..\..\..\..\inc\rtl87x3d\platform\vector_table.h)(0x681B4006)
-I (..\..\..\..\inc\platform\section.h)(0x671F52AA)
-I (..\..\..\..\inc\hal\io\hal_gpio.h)(0x681B4006)
-I (..\..\..\..\inc\hal\io\hal_gpio_int.h)(0x681B4006)
-I (..\..\..\..\inc\hal\io\hal_pinmux.h)(0x6800C296)
-I (..\..\..\..\inc\rtl87x3d\hal\hal_def.h)(0x6800C296)
-F (..\..\..\..\src\mcu\io_hal\common\hal_pinmux.c)(0x681B4008)(--c99 -c --cpu Cortex-M4.fp.sp --li -g -O2 --apcs=interwork -I ..\..\audio_demo -I ..\inc\rtl87x3d -I ..\..\..\..\inc\rtl87x3d\platform -I ..\..\..\..\inc\rtl87x3d\platform\cmsis -I ..\..\..\..\inc\bluetooth\profile\client -I ..\..\..\..\inc\bluetooth\profile\server -I ..\..\..\..\inc\os -I ..\..\..\..\inc\bluetooth\profile -I ..\..\..\..\inc\bluetooth\gap -I ..\..\..\..\inc\app -I ..\..\..\..\inc\rtl87x3d\io -I ..\..\..\..\inc\rtl87x3d\hal -I ..\..\..\..\inc\rtl87x3d\hal\io -I ..\..\..\..\inc\hal\platform -I ..\..\..\..\inc\hal\io -I ..\..\..\..\bin\rtl87x3d\upperstack_stamp -I ..\..\..\..\bin\rtl87x3d\flash_map_config -I ..\..\..\..\src\sample\audio_demo -I ..\..\..\..\inc\framework\bt -I ..\..\..\..\inc\framework\remote -I ..\..\..\..\inc\framework\sysm -I ..\..\..\..\inc\framework\audio -I ..\..\..\..\inc\framework\console -I ..\..\..\..\inc\rtl87x3d\bluetooth\gap -I ..\..\..\..\src\mcu\module\console\transport -I ..\..\..\..\inc\platform -I ..\..\..\..\src\mcu\module\buck -I ..\..\..\..\inc\hal\power -I ..\mdk --gnu --preinclude app_flags.h --bss_threshold=0-IDevice\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -DCONFIG_SOC_SERIES_RTL8773D="1"-o .\objects\hal_pinmux.o --omf_browse .\objects\hal_pinmux.crf --depend .\objects\hal_pinmux.d)
-I (..\..\..\..\src\sample\audio_demo\app_flags.h)(0x697C7CAA)
-I (..\..\..\..\inc\hal\io\hal_pinmux.h)(0x6800C296)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdint.h)(0x602546A6)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stdbool.h)(0x602546A4)
-I (..\..\..\..\inc\rtl87x3d\hal\hal_def.h)(0x6800C296)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_pinmux.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\rtl876x.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\compiler_abstraction.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\irqn_def.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cm4.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmInstr.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmFunc.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\platform\cmsis\core_cmSimd.h)(0x671F52AA)
-I (..\..\..\..\inc\hal\io\io_utils.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\pin_def.h)(0x681B4006)
-I (..\..\..\..\inc\rtl87x3d\platform\indirect_access.h)(0x671F52AA)
-I (..\..\..\..\inc\rtl87x3d\io\rtl876x_bitfields.h)(0x671F52AA)
-I (..\..\..\..\inc\os\os_mem.h)(0x681B3D42)
-I (D:\Softwares\Keil\ARM\ARMCC\include\stddef.h)(0x602546A6)
-I (..\..\..\..\inc\hal\io\io_dlps.h)(0x681B3D42)
-I (..\..\..\..\inc\rtl87x3d\platform\slist.h)(0x671F52AA)
-I (..\..\..\..\inc\os\os_sync.h)(0x681B4006)

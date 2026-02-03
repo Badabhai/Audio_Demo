@@ -64,14 +64,13 @@ bool app_audio_kws_callback(T_KWS_HANDLE handle,
 
     case KWS_EVENT_DATA_IND:
         {
-					APP_PRINT_INFO1("KWS: inference event %lu", param);
+
         }
         break;
 
     case KWS_EVENT_DATA_FILLED:
         {
             app_audio_kws_fill_sbc_data();
-						APP_PRINT_INFO0("KWS: got audio frame");
         }
         break;
 

@@ -113,5 +113,5 @@ void app_dlps_init(void)
     power_stage_cb_register(app_dlps_exit_callback, POWER_STAGE_RESTORE);
 
     SYSBLKCTRL->u_208.BITS_208.r_DSP_CLK_SRC_EN = 0;
-    bt_power_mode_set(BTPOWER_ACTIVE);
+    bt_power_mode_set(BTPOWER_DEEP_SLEEP);
 }

@@ -32,7 +32,6 @@ void app_io_handle_msg(T_IO_MSG io_driver_msg_recv)
     {
     case IO_MSG_TYPE_CONSOLE:
         {
-					APP_PRINT_INFO0("IO_MSG_TYPE_CONSOLE---------------");
             app_console_handle_msg(io_driver_msg_recv);
         }
         break;

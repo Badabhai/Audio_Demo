@@ -192,15 +192,12 @@ void audio_demo_main_task(void *p_param)
         {
             if (EVENT_GROUP(event) == EVENT_GROUP_IO)
             {
-							APP_PRINT_INFO0("EVENT_GROUP_IO---------------");
                 T_IO_MSG io_msg;
 
                 if (os_msg_recv(audio_io_queue_handle, &io_msg, 0) == true)
                 {
-									APP_PRINT_INFO0("OS_MSG_RECV--------TRUE");
                     if (event == EVENT_IO_TO_APP)
                     {
-											APP_PRINT_INFO0("EVENT_IO_TO_APP---------");
                         app_io_handle_msg(io_msg);
                     }
                 }

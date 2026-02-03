@@ -349,14 +349,13 @@ bool console_vad(const char *cmd_str, char *buf, size_t buf_len)
 
     subcmd = (char *)cli_param_get(cmd_str, 1, &param_len);
     subcmd[param_len] = '\0';
-		
 
     if (!strcmp(subcmd, "enable"))
     {
-        //if (param_num != 4)
-        //{
-        //   goto err;
-        //}
+        if (param_num != 4)
+        {
+            goto err;
+        }
 
         p_param = subcmd + param_len + 1;
 
