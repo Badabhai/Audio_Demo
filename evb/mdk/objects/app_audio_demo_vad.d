@@ -1,0 +1,9 @@
+.\objects\app_audio_demo_vad.o: ..\..\..\..\src\sample\audio_demo\app_audio_demo_vad.c
+.\objects\app_audio_demo_vad.o: ..\..\..\..\src\sample\audio_demo\app_flags.h
+.\objects\app_audio_demo_vad.o: ..\..\..\..\inc\rtl87x3d\platform\trace.h
+.\objects\app_audio_demo_vad.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\app_audio_demo_vad.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\app_audio_demo_vad.o: ..\..\..\..\inc\framework\audio\audio_type.h
+.\objects\app_audio_demo_vad.o: ..\..\..\..\inc\framework\audio\vad.h
+.\objects\app_audio_demo_vad.o: ..\..\..\..\inc\framework\audio\kws.h
+.\objects\app_audio_demo_vad.o: ..\..\..\..\src\sample\audio_demo\app_audio_demo_vad.h

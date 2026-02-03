@@ -1,0 +1,13 @@
+.\objects\app_buck_tps62860.o: ..\..\..\..\src\mcu\module\buck\app_buck_tps62860.c
+.\objects\app_buck_tps62860.o: ..\..\..\..\src\sample\audio_demo\app_flags.h
+.\objects\app_buck_tps62860.o: ..\..\..\..\src\mcu\module\buck\app_buck_tps62860.h
+.\objects\app_buck_tps62860.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\app_buck_tps62860.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\app_buck_tps62860.o: ..\..\..\..\inc\hal\io\hal_i2c.h
+.\objects\app_buck_tps62860.o: ..\..\..\..\inc\rtl87x3d\hal\hal_def.h
+.\objects\app_buck_tps62860.o: ..\..\..\..\inc\rtl87x3d\platform\platform_utils.h
+.\objects\app_buck_tps62860.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\app_buck_tps62860.o: ..\..\..\..\inc\hal\io\hal_gpio.h
+.\objects\app_buck_tps62860.o: ..\..\..\..\inc\rtl87x3d\platform\pin_def.h
+.\objects\app_buck_tps62860.o: ..\..\..\..\inc\rtl87x3d\platform\trace.h
+.\objects\app_buck_tps62860.o: ..\..\..\..\inc\hal\power\ext_buck.h

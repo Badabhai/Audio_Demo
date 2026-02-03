@@ -1,0 +1,14 @@
+.\objects\app_audio_demo_line_in.o: ..\..\..\..\src\sample\audio_demo\app_audio_demo_line_in.c
+.\objects\app_audio_demo_line_in.o: ..\..\..\..\src\sample\audio_demo\app_flags.h
+.\objects\app_audio_demo_line_in.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\app_audio_demo_line_in.o: ..\..\..\..\inc\rtl87x3d\platform\trace.h
+.\objects\app_audio_demo_line_in.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\app_audio_demo_line_in.o: ..\..\..\..\inc\framework\audio\audio.h
+.\objects\app_audio_demo_line_in.o: ..\..\..\..\inc\framework\audio\audio_track.h
+.\objects\app_audio_demo_line_in.o: ..\..\..\..\inc\framework\audio\audio_type.h
+.\objects\app_audio_demo_line_in.o: ..\..\..\..\inc\framework\audio\audio_route.h
+.\objects\app_audio_demo_line_in.o: ..\..\..\..\inc\framework\audio\audio_line.h
+.\objects\app_audio_demo_line_in.o: ..\..\..\..\inc\framework\audio\audio_passthrough.h
+.\objects\app_audio_demo_line_in.o: ..\..\..\..\inc\framework\audio\tts.h
+.\objects\app_audio_demo_line_in.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\app_audio_demo_line_in.o: ..\..\..\..\src\sample\audio_demo\app_audio_demo_line_in.h

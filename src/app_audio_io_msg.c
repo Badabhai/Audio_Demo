@@ -1,0 +1,43 @@
+/*
+ * Copyright (c) 2018, Realsil Semiconductor Corporation. All rights reserved.
+ */
+#include "os_sync.h"
+#include "os_msg.h"
+#include "trace.h"
+#include "app_audio_io_msg.h"
+#include "app_console_msg.h"
+
+extern void *audio_io_queue_handle;
+extern void *audio_evt_queue_handle;
+
+bool app_io_send_msg(T_IO_MSG *io_msg)
+{
+    T_EVENT_TYPE  event;
+    bool ret = false;
+    event = EVENT_IO_TO_APP;
+
+    if (os_msg_send(audio_io_queue_handle, io_msg, 0) == true)
+    {
+        ret = os_msg_send(audio_evt_queue_handle, &event, 0);
+    }
+
+    return ret;
+}
+
+void app_io_handle_msg(T_IO_MSG io_driver_msg_recv)
+{
+    uint16_t msgtype = io_driver_msg_recv.type;
+
+    switch (msgtype)
+    {
+    case IO_MSG_TYPE_CONSOLE:
+        {
+					APP_PRINT_INFO0("IO_MSG_TYPE_CONSOLE---------------");
+            app_console_handle_msg(io_driver_msg_recv);
+        }
+        break;
+
+    default:
+        break;
+    }
+}

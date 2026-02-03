@@ -1,0 +1,10 @@
+.\objects\app_audio_demo_kws.o: ..\..\..\..\src\sample\audio_demo\app_audio_demo_kws.c
+.\objects\app_audio_demo_kws.o: ..\..\..\..\src\sample\audio_demo\app_flags.h
+.\objects\app_audio_demo_kws.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\string.h
+.\objects\app_audio_demo_kws.o: ..\..\..\..\inc\rtl87x3d\platform\trace.h
+.\objects\app_audio_demo_kws.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\app_audio_demo_kws.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\app_audio_demo_kws.o: ..\..\..\..\inc\framework\audio\audio_type.h
+.\objects\app_audio_demo_kws.o: ..\..\..\..\inc\framework\audio\kws.h
+.\objects\app_audio_demo_kws.o: ..\..\..\..\inc\framework\console\console.h
+.\objects\app_audio_demo_kws.o: ..\..\..\..\src\sample\audio_demo\app_audio_demo_kws.h

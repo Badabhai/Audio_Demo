@@ -1,0 +1,122 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Suraj Yadav, NeuroDrishti, LIC=Q7GS5-0GNX6-72JC5-ZRD13-GT95F-MX3I8
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.36.0.0
+Toolchain Path:  D:\Softwares\Keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0 
+<h2>Project:</h2>
+D:\Keil_Projects\SDK\board\evb\audio_demo\mdk\rtl87x3d_audio_demo.uvprojx
+Project File Date:  01/19/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Softwares\Keil\ARM\ARMCC\Bin'
+Rebuild target 'audio_demo_cs_16M_bank0'
+Before Build - User command #2: cmd.exe /c rtl87x3d_before_build_script.bat flash_cs_16M "0" rtl87x3d
+D:\Keil_Projects\SDK\board\evb\audio_demo\mdk>rem @echo off 
+D:\Keil_Projects\SDK\board\evb\audio_demo\mdk>set flash_bank_path=flash_cs_16M 
+D:\Keil_Projects\SDK\board\evb\audio_demo\mdk>set flash_bank_num="0" 
+D:\Keil_Projects\SDK\board\evb\audio_demo\mdk>set ic_type=rtl87x3d 
+D:\Keil_Projects\SDK\board\evb\audio_demo\mdk>cmd.exe /c copy ..\..\..\..\bin\rtl87x3d\flash_map_config\flash_cs_16M\flash_map.h ..\..\..\..\bin\rtl87x3d\flash_map_config\flash_map.h 
+        1 file(s) copied.
+compiling app_audio_demo_line_in.c...
+assembling startup_rtl87x3d.s...
+compiling app_audio_io_msg.c...
+compiling app_audio_demo_policy.c...
+compiling app_audio_demo_passthrough.c...
+compiling console_uart.c...
+compiling app_audio_demo_anc.c...
+compiling app_audio_console_msg.c...
+..\..\..\..\src\sample\audio_demo\app_audio_console_msg.c(136): warning:  #550-D: variable "vad_type"  was set but never used
+                      uint8_t  vad_type;
+..\..\..\..\src\sample\audio_demo\app_audio_console_msg.c(137): warning:  #550-D: variable "bit_width"  was set but never used
+                      uint8_t  bit_width;
+..\..\..\..\src\sample\audio_demo\app_audio_console_msg.c(138): warning:  #550-D: variable "frame_length"  was set but never used
+                      uint16_t frame_length;
+..\..\..\..\src\sample\audio_demo\app_audio_console_msg.c: 3 warnings, 0 errors
+compiling app_audio_demo_console.c...
+compiling app_audio_demo_pipe.c...
+compiling app_buck_apw7564.c...
+compiling app_buck_tps62860.c...
+compiling app_audio_demo_vad.c...
+compiling app_dlps.c...
+compiling app_audio_demo_track.c...
+compiling system_rtl87x3.c...
+compiling app_audio_data.c...
+compiling app_audio_demo_kws.c...
+compiling rtl876x_uart.c...
+compiling app_audio_demo_main.c...
+compiling rtl876x_gdma.c...
+compiling rtl876x_tim.c...
+compiling rtl876x_gpio.c...
+compiling rtl876x_i2c.c...
+compiling hw_tim.c...
+compiling hal_i2c.c...
+compiling hal_dma_internal.c...
+compiling hal_pinmux.c...
+compiling rtl876x_pinmux.c...
+compiling rtl876x_rcc.c...
+compiling hal_gpio.c...
+compiling hal_gpio_int.c...
+linking...
+Program Size: Code=378160 RO-data=271648 RW-data=1488 ZI-data=3128  
+After Build - User command #2: cmd.exe /c dual_bank_after_build.bat "D:\Softwares\Keil\ARM\ARMCC\include\..\bin\fromelf.exe"   "D:\Keil_Projects\SDK\board\evb\audio_demo\mdk\objects\audio_demo.axf"  audio_demo  bank0  flash_cs_16M rtl87x3d
+D:\Keil_Projects\SDK\board\evb\audio_demo\mdk>echo off 
+Warning: Q9931W: Your license for feature Keil will expire in 9 days
+Finished: 0 information, 1 warning and 0 error messages.
+Warning: Q9931W: Your license for feature Keil will expire in 9 days
+Finished: 0 information, 1 warning and 0 error messages.
+        1 file(s) copied.
+        1 file(s) copied.
+"..\..\..\..\tool\Gadgets\prepend_header.exe"   /app_code "bin\rtl87x3d\flash_cs_16M\bank0\audio_demo_bank0.bin"
+skip updating uuid
+<===image ctrl header crc16: 0xdaed
+image header size is 0x1000 !
+update image header length as 0x8fa54 ok!
+"..\..\..\..\tool\Gadgets\prepend_header.exe"  /rsa "..\..\..\..\tool\Gadgets\default_rsa_key.pem" /app_code "bin\rtl87x3d\flash_cs_16M\bank0\audio_demo_bank0.bin"
+<===image ctrl header crc16: 0x4d86
+  PKCS#1 data sign  : passed
+RSA sign image OK.
+mp file is D:\Keil_Projects\SDK\board\evb\audio_demo\mdk\mp.ini!
+"..\..\..\..\tool\Gadgets\prepend_header.exe"  /mp_ini mp.ini /app_code "bin\rtl87x3d\flash_cs_16M\bank0\audio_demo_bank0.bin"
+MP header appending start...
+Bin_ID : ID_APP
+  OtaVersion not exists in mp.ini [OtaInfo] node, set [OtaInfo] OtaVersion=2
+MP header appending OK!
+bin\rtl87x3d\flash_cs_16M\bank0\audio_demo_bank0_MP.bin
+%#define%VERSION_MAJOR%3%#define%VERSION_MINOR%14%#define%VERSION_REVISION%5%#define%VERSION_BUILDNUM%1478%#define%VERSION_GCID%0xc4e8427e
+bin\rtl87x3d\flash_cs_16M\bank0\audio_demo_bank0_MP-v3.14.5.1478-c4e8427e-e53cc3760583f902bc69403658c77a17.bin
+        1 file(s) copied.
+        1 file(s) copied.
+debug file directory: bin\rtl87x3d\flash_cs_16M\bank0
+su file directory: None
+### Extract function table pickle:
+		audio_demo_bank0_function_table.pickle
+### Extract variable table pickle:
+		audio_demo_bank0_variable_table.pickle
+Output Image for Keil Download: "Objects\app_image.hex"
+Build Bank: bank0
+Download Address: 0x02062000
+".\objects\audio_demo.axf" - 0 Error(s), 3 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+<h2>Collection of Component include folders:</h2>
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:23
+</pre>
+</body>
+</html>

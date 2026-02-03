@@ -1,0 +1,5 @@
+config REALTEK_APP_AUDIO_DEMO
+   bool 
+   default y
+
+rsource "../../../Kconfig"
